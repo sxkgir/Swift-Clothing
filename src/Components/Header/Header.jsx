@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logoName from "../../Icon/logoName.png"
+import logoName from "../../Icon/LogoName.png"
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { SwiftShopContext  } from "../../SwiftProvider/SwiftShopContext.tsx";
