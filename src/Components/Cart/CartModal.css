@@ -1,0 +1,98 @@
+/* In your CartModal.css or similar */
+.modal-cart-container {
+    position: fixed;
+    top: 68.33px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000; /* ensure it’s above other content */
+}
+  
+.modal-cart {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 380px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-added-item-notifcation{
+    display: flex;
+    max-height: 17%;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    gap: 15px;
+
+}
+
+.cart-added-item-notifcation > svg {
+    width: 7%;
+}
+
+.modal-header > button {
+    text-align: center;
+    font-size: 16px;
+    padding: 7px;
+    padding-bottom: 9px;
+    transform: rotate(90deg);
+    font-weight: 900;
+    border: none;
+    width: 40px;
+    background-color: rgba(209, 209, 209, 0.749);
+    border-radius: 50%;
+}
+
+.product-added{
+    margin: 1.5vh 0px;
+    margin-bottom: 3vh;
+    height: 40%;
+    display: flex;
+    gap: 1.5vw;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 130px;
+  }
+
+.cart-price-information-view{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.view-cart-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 24px;
+    padding: 2vh 2vw;
+    text-align: center;
+    font-size: 17px;
+    width: 80%;
+}
+    
+  

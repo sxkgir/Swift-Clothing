@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "title": "Classic Denim Jacket",
+        "price": 89,
+        "category": "clothing",
+        "image": "/CLassics.png"
+    },
+    {
+        "id": 2,
+        "title": "Slim Fit Cotton Chinos",
+        "price": 94,
+        "category": "clothing",
+        "image": "/CLassics.png"
+    },
+    {
+        "id": 3,
+        "title": "Casual Summer T-Shirt",
+        "price": 120,
+        "category": "clothing",
+        "image": "/CLassics.png"
+    },
+    {
+        "id": 4,
+        "title": "Oversized Hoodie",
+        "price": 95,
+        "category": "clothing",
+        "image": "/CLassics.png"
+    },
+    {
+        "id": 5,
+        "title": "Elegant Evening Dress",
+        "price": 107,
+        "category": "clothing",
+        "image": "/CLassics.png"
+    },
+    {
+        "id": 6,
+        "title": "Lightweight Windbreaker",
+        "price": 105,
+        "category": "clothing",
+        "image": "/CLassics.png"
+    },
+    {
+        "id": 7,
+        "title": "Premium Wool Sweater",
+        "price": 110,
+        "category": "clothing",
+        "image": "/CLassics.png"
+    },
+    {
+        "id": 8,
+        "title": "Athletic Running Shorts",
+        "price": 85,
+        "category": "clothing",
+        "image": "/CLassics.png"
+    },
+    {
+        "id": 9,
+        "title": "Vintage Leather Jacket",
+        "price": 85,
+        "category": "clothing",
+        "image": "/CLassics.png"
+    },
+    {
+        "id": 10,
+        "title": "Formal Blazer",
+        "price": 84,
+        "category": "clothing",
+        "image": "/CLassics.png"
+    },
+    {
+        "id": 11,
+        "title": "Comfy Lounge Pants",
+        "price": 86,
+        "category": "clothing",
+        "image": "/CLassics.png"
+    },
+    {
+        "id": 12,
+        "title": "Trendy Graphic Tee",
+        "price": 113,
+        "category": "clothing",
+        "image": "/CLassics.png"
+    }
+   
+]
