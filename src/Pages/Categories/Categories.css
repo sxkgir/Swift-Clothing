@@ -63,7 +63,6 @@
 .collection-container {
     max-width: 80%;
     margin: 0 auto;
-    padding-right: 40px;
 }
 
 .collection-container-list{
@@ -113,9 +112,6 @@
 }
 
 @media (max-width:1200px) {
-    .collection-container{
-        margin-left: 10.5vw;
-    }
     .collection-container-list{
         grid-template-columns: repeat(3,1fr);   
         
