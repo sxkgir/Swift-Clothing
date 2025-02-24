@@ -1,6 +1,7 @@
 .collection-flex{
     display: flex;
     background-color: white;
+    justify-content: center;
 }
 
 
