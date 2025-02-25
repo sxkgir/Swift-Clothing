@@ -1,6 +1,6 @@
-// main.tsx or index.tsx or wherever you set up your router
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import "./index.css"
 import {
   createBrowserRouter,
   RouterProvider,

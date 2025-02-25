@@ -29,13 +29,13 @@ export function Sidemenu() {
     
       return (
         <div className="Sidemenu-options" ref={sidemenuRef}>
-            <button 
-            className="Shop"
+            <button     
+            className="Shop sideShop"
             onClick={handleShopClick}
             style={isDisplayShop ? {borderBottom:"none",paddingBottom:"0px"}:{}}
             >
                 SHOP
-                <img src={isDisplayShop ? expandLess : expandMore} alt="" /> 
+                <img className="expand-img" src={isDisplayShop ? expandLess : expandMore} alt="" /> 
             </button>
             {isDisplayShop &&(
             <ul className="shop-choices">
@@ -65,13 +65,16 @@ export function Sidemenu() {
                 </li>
             </ul>
             )}
-            <button className="Account">
+            <button className="Account side" >
                 ACCOUNT
             </button>
-            <button className="Orders">
-                ORDERS
-            </button>
-            <button className="Support">
+            <Link to="/checkout">
+                <button className="Orders side">
+                    ORDERS
+                </button>
+
+            </Link>
+            <button className="Support side">
                 Support
             </button>
         </div>

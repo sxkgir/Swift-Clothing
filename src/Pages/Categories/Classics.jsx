@@ -4,6 +4,7 @@ import { Sidemenu } from "../../Components/sidebar/SideMenu.jsx";
 import ClothingData from "../../ClothingData/ClotheData.json"
 import expandMore from "../../Icon/expand-more.png"
 import { Cart } from "../../Components/Cart/CartModal.jsx";
+import ClassicsImg from "/CLassics.png"
 import "./Categories.css"
 
 function createNewProduct(id,name,price,image) {
@@ -91,7 +92,7 @@ export function Classics() {
                         <li key={clothes.id} className="collection-container-item">
                             <div className="product-card">
                                 <button className="clothing-link-placeholder">
-                                    <img className={`clothing-image ${clothes.title}`} src={clothes.image } alt="" />
+                                    <img className={`clothing-image ${clothes.title}`} src={ClassicsImg } alt="" />
                                 </button>
                                 <div className="product-card-info">
                                     <div>
@@ -103,7 +104,7 @@ export function Classics() {
                                         </span>
                                     </div>
                                     <button className="add-to-cart" onClick={ () => {
-                                        handleAddProduct(clothes.id,clothes.title,clothes.price,clothes.image);
+                                        handleAddProduct(clothes.id,clothes.title,clothes.price,ClassicsImg);
                                         toggleCartModal();
                                     }}>
                                         Add To Cart

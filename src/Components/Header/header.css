@@ -1,7 +1,9 @@
 body{
     margin: 0;
 }
-
+.nav-section-collection-container{
+    padding-left: 30px;
+}
 .header-section{
     display: flex;
     justify-content: space-between;
@@ -33,10 +35,12 @@ body{
     background-color: black;
     border: none;
     align-items: center;
+    padding-right: 25px;
 }
 
 .cart-button{
     position: relative;
+    top: 1.5px;
 }
 .cart{
     width: 30px;
@@ -48,9 +52,8 @@ body{
     color: white;
     position: absolute;
     font-size: 16px;
-    top: 28.5px;
-    left: 31px;
-  
+    top: 5px;
+    left: 11px;  
 }
 
 .site-logoName

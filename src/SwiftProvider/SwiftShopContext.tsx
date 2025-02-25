@@ -20,7 +20,9 @@ interface SwiftShopContextType {
     currentProduct: Product | null;
     cartTotal: number;
     closeCartModal: () => void;
-}
+    removeItem: (productToDelete: Product) => void;
+    doCalc: () => void;
+  }
 
 export const SwiftShopContext = createContext<SwiftShopContextType | undefined>(undefined);
 
@@ -45,7 +47,7 @@ export function SwiftShopProvider({ children }: { children: ReactNode }) {
       setCartModalOpen(true);
       setTimeout(() => {
         setCartModalOpen(false);
-      }, 4000000  ); 
+      }, 3000  ); 
     };
 
     const closeCartModal = () => {
@@ -55,12 +57,29 @@ export function SwiftShopProvider({ children }: { children: ReactNode }) {
     useEffect(() =>{
       console.log(cartItem)
     },[cartItem]);
+
+    const removeItem = (productToDelete: Product) => {
+      const updatedCart = cartItem.filter(cart => cart !== productToDelete);
+      setCartItem(updatedCart);
+      const newTotal = updatedCart.reduce((sum, product) => sum + product.price, 0);
+      setCartTotal(newTotal);
     
+    };
 
-    useEffect(() =>{
-      console.log(isCartModalOpen);
-    },[isCartModalOpen])
+    const doCalc = () => {
+      const stateTax = 1.0875;
+      const totalTax = (stateTax * cartTotal) - cartTotal;
+      const totalPrice = stateTax * cartTotal;
+      
+      return {
+          totalTax: totalTax.toFixed(2),
+          totalPrice: totalPrice.toFixed(2)
+      };
+    }
 
+    useEffect(() => {
+      doCalc();
+    },cartItem)  
 
     
 
@@ -80,7 +99,9 @@ export function SwiftShopProvider({ children }: { children: ReactNode }) {
          toggleCartModal,
          currentProduct,
          cartTotal,
-         closeCartModal
+         closeCartModal,
+         removeItem,
+         doCalc,
          }
       }>
         {children}

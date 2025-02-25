@@ -3,12 +3,13 @@ import { NewReleases } from "../Pages/Categories/NewReleases.jsx";
 import { Sales } from "../Pages/Categories/Sales.jsx";
 import { Home } from "../Pages/Home/Home.jsx";
 import { App } from "../App.jsx";
-
+import { AboutUs } from "../Pages/CompanyInfo/AboutUs.jsx";
+import { Checkout } from "../Pages/Checkout/Checkout.jsx";
 
 const routes = [
     {
       path: "/",
-      element: <App />, // App renders <Header /> + <Outlet />
+      element: <App />, 
       children: [
         {
           index:true,
@@ -25,6 +26,14 @@ const routes = [
         {
           path: "sale",
           element: <Sales />
+        },
+        {
+          path: "about-us",
+          element: <AboutUs />
+        },
+        {
+          path: "checkout",
+          element: <Checkout />
         }
       ]
     }

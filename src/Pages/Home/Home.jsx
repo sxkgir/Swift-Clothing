@@ -23,12 +23,16 @@ export function Home() {
                         Join the Swift Club now and achieve your goals faster than before
                     </span>
                     <div className="club-button">
-                        <button>
-                            Learn More
-                        </button>
-                        <button>
-                            Join Now    
-                        </button>
+                        <Link to="/about-us" className="about-us-direct">
+                            <button className="btn-link-direct">
+                                About Us    
+                            </button>
+                        </Link>
+                        <Link to="/classics" className="about-us-direct">
+                            <button className="btn-link-direct">
+                                Join Now
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 <img src={fullLogo} alt="" />

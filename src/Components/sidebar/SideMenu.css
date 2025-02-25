@@ -11,12 +11,23 @@
     align-items: center;
 }
 
-img{
+img.expand-img{
     max-width: 15px;
 }
 
-button{
+.side{
     display: block;
+    background-color: transparent;
+    text-align: left;
+    padding: 20px;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12.5px;
+}
+
+.sideShop{
     background-color: transparent;
     text-align: left;
     padding: 20px;
@@ -27,6 +38,8 @@ button{
     font-size: 12.5px;
 
 }
+
+
 
 .shop-choices{
     display: flex;

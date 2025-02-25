@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { SwiftShopContext } from "../../SwiftProvider/SwiftShopContext.tsx";
 import "./CartModal.css"
+import { Link } from "react-router-dom";
 export function Cart() {
 
     const { currentProduct,cartItem, cartTotal, closeCartModal} = useContext(SwiftShopContext);
@@ -59,9 +60,12 @@ export function Cart() {
                     </div>
                     <div className="cart-price-information-view">
                         Total Cart Price: ${cartTotal}
-                        <button className="view-cart-button">
-                            View Bag ({cartItem.length})
-                        </button>
+                        <Link to="/checkout" className="w-full flex justify-center">
+                            <button className="view-cart-button">
+                                View Bag ({cartItem.length})
+                            </button>
+                        </Link>
+
                     </div>
                 </div>
             </div>
