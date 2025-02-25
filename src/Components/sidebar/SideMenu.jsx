@@ -68,11 +68,22 @@ export function Sidemenu() {
             <button className="Account side" >
                 ACCOUNT
             </button>
-            <Link to="/checkout">
+            <Link
+             to="/checkout"    
+             onClick={() => setSidebarOpen(false)}
+
+            
+            >
                 <button className="Orders side">
                     ORDERS
                 </button>
-
+            </Link>
+            <Link to="/about-us"
+             onClick={() => setSidebarOpen(false)}
+            >
+                <button className="About side">
+                    ABOUT US
+                </button>
             </Link>
             <button className="Support side">
                 Support

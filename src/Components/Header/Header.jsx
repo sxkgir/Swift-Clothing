@@ -31,6 +31,11 @@ export function Header() {
                                 <span>SALE</span>
                             </Link>
                         </li>
+                        <li>
+                            <Link to="/about-us">
+                                <span>ABOUT US</span>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
                 <div className="navigation-cart-container">
