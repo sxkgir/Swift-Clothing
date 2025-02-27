@@ -85,6 +85,15 @@ export function Sidemenu() {
                     ABOUT US
                 </button>
             </Link>
+            <Link
+             to="/contact-us"    
+             onClick={() => setSidebarOpen(false)}
+            >
+                <button className="Contact side">
+                    CONTACT US
+                </button>
+            </Link>
+
             <button className="Support side">
                 Support
             </button>

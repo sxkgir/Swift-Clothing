@@ -28,7 +28,7 @@ export function Home() {
                                 About Us    
                             </button>
                         </Link>
-                        <Link to="/classics" className="about-us-direct">
+                        <Link to="/contact-us" className="about-us-direct">
                             <button className="btn-link-direct">
                                 Join Now
                             </button>

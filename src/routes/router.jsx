@@ -5,7 +5,7 @@ import { Home } from "../Pages/Home/Home.jsx";
 import { App } from "../App.jsx";
 import { AboutUs } from "../Pages/CompanyInfo/AboutUs.jsx";
 import { Checkout } from "../Pages/Checkout/Checkout.jsx";
-
+import { ContactPage } from "../Pages/ContactUs/ContactUs.jsx"
 const routes = [
     {
       path: "/",
@@ -34,6 +34,10 @@ const routes = [
         {
           path: "checkout",
           element: <Checkout />
+        },
+        {
+          path: "contact-us",
+          element: <ContactPage />
         }
       ]
     }

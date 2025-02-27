@@ -62,6 +62,8 @@
 }
 
 .collection-container-list{
+    margin-right: 20px;
+    margin-top: 40px; 
     display: grid;
     grid-template-columns: repeat(4,1fr);
     column-gap: 25px;
@@ -146,10 +148,10 @@
 @media (max-width:600px){
     .collection-container-list{
         grid-template-columns: repeat(1,1fr);
+        margin-right: 0px;
     }
     .product-card-info{
         font-size: 1.25vh;
-
     }
     .add-to-cart{
         font-size: 1.25vh;

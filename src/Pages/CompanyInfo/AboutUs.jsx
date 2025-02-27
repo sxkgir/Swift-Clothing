@@ -51,7 +51,7 @@ export function AboutUs() {
 
                 <div className="flex flex-col items-center gap-y-[6vh] my-[7vh]">
                     <h1 className="text-white font-bold text-[18px]">Have more questions ?</h1>
-                    <Link to="/classics" className="border-solid border-white border-[1px] py-[1vh] px-[2vw] text-white rounded-[16px] bg-[#747474]">
+                    <Link to="/contact-us" className="border-solid border-white border-[1px] py-[1vh] px-[2vw] text-white rounded-[16px] bg-[#747474]">
                         Contact Us
                     </Link>
                 </div>  
