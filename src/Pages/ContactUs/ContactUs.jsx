@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-
+import React, { useState, useContext} from 'react';
+import { SwiftShopContext } from "../../SwiftProvider/SwiftShopContext.tsx";
+import { Sidemenu } from "../../Components/sidebar/SideMenu.jsx";
 export const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -36,7 +37,12 @@ export const ContactPage = () => {
       setIsSubmitted(false);
     }, 3000);
   };
-
+  
+  const { isSidebarOpen }  = useContext(SwiftShopContext);
+  
+  if (isSidebarOpen){
+        return <Sidemenu />
+  }
   return (
     <div className="bg-[rgba(17, 17, 17, 0.63)] min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
